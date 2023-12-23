@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%
+}
 .header {
     display: flex;
     align-items: center;
@@ -192,10 +197,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        margin: 0px;
+    }
     .s {
         display: none;
     }
-
     .main {
         justify-content: center;
         width: auto;
@@ -228,6 +235,17 @@
         margin: 40px;
         height: 30px;
     }
+    footer{
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    #news p{
+        width: auto;
+    }
+    #news img{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -241,4 +259,102 @@
         width: 50%;
         height: auto;
     }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.soc {
+    display: flex;
+    gap: 20px;
+}
+
+.soc img {
+    width: 50px;
+    transition: .5s;
+}
+.soc img:hover {
+    filter: drop-shadow( 5px 5px 5px rgba(132, 132, 243, 0.507));
+    cursor: pointer;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.imgg {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#news img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.473);
+}
+
+.tex {
+    width: 100%;
+    text-align: center;
+}
+
+.tex h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.tex p {
+    font-size: 19px;
+    padding: 20px;
+    width: 700px;
+    margin: auto;
+}
+.men{
+    text-align: center;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+#menu {
+    ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+li {
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+}
 }

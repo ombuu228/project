@@ -8,11 +8,11 @@
     <title>Проект</title>
 </head>
 
-<body style="font-family: sans-serif; width: 100%;overflow-x: hidden;">
+<body>
     <header class="header">
         <a class="icon" href="main.html"><img src="img/Icon.png" width="90px" alt="Перейти на головну сторінку"></a>
         <span class="s">
-            <a href="#news">Новини</a>
+            <a href="#news">Про нас</a>
             <a href="#menu">Меню</a>
             <a href="#contact">Контакти</a>
         </span>
@@ -23,8 +23,8 @@
         <div class="drop">
             <button class="btn">Меню</button>
             <div class="dropdown">
-                <a href="#news">Новини</a>
-                <a href="#pidtrym">Підтримка</a>
+                <a href="#news">Про нас</a>
+                <a href="#menu">Меню</a>
                 <a href="#contact">Контакти</a>
                 <a href="login.html">Логін</a>
                 <a href="login.html">Реєстрація</a>
@@ -32,8 +32,8 @@
         </div>
     </header>
     <hr>
-    <main class="main">
-        <section>
+    <main class="main" id="card">
+        <section id="r">
             <article class="buyex">
                 <div>
                     <img src="img/Ramen.jpg" alt="Рамен">
@@ -46,7 +46,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="u">
             <article class="buy">
                 <div>
                     <img src="img/udon.jpg" alt="Удон">
@@ -60,7 +60,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="t">
             <article class="buy">
                 <div>
                     <img src="img/takoy.jpg" alt="Такоякі">
@@ -74,7 +74,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="y">
             <article class="buy">
                 <div>
                     <img src="img/yakit.jpg" alt="Якіторі">
@@ -88,7 +88,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="o">
             <article class="buy">
                 <div>
                     <img src="img/onig.jpg" alt="Онігірі">
@@ -102,7 +102,7 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="s">
             <article class="buy">
                 <div>
                     <img src="img/soba.jpg" alt="Соба">
@@ -117,6 +117,66 @@
             </article>
         </section>
     </main>
+    <hr>
+    <div id="news">
+        <div class="imgg">
+        <img src="/img/onig.jpg">
+        <img src="/img/Ramen.jpg" alt="">
+        <img src="/img/soba.jpg" alt="">
+        </div>
+        <div class="tex">
+            <h1>Про нас</h1>
+            <p>Вітаємо вас в ресторані "Kanraku" – місці, де ви можете насолоджуватися справжньою японською кухнею за доступними цінами!<br><br>
+                "Kanraku" - це не просто їжа, а аутентичний кулінарний досвід, який перенесе вас прямо в серце Японії. Наші шеф-кухарі майстерно готують страви, використовуючи традиційні рецепти та свіжі, якісні інгредієнти.<br><br>
+                Ми пишаємося рознообразністю нашого меню, яке задовольнить смак кожного гостя. Від класичних суші та сашімі до ароматних рамені та смачних японських тапас - у нас є щось для кожного.<br><br>
+                Однак наше головне відзначення - доступні ціни. Ми віримо, що справжній гастрономічний досвід має бути доступним для всіх, і саме тому ми пропонуємо вам вишукані страви японської кухні за доступними цінами, не компрометуючи при цьому якість.<br><br>
+                "Kanraku" - це не просто ресторан, це місце, де ви можете насолоджуватися вишуканою кухнею в затишній атмосфері. Запрошуємо вас в подорож смаком та насолоджуйтеся унікальним досвідом "Kanraku". Де кожен приготований обід - це справжня подорож у світ смаку та задоволення.</p>
+        </div>
+        <div class="imgg">
+            <img src="/img/takoy.jpg">
+            <img src="/img/udon.jpg" alt="">
+            <img src="/img/yakit.jpg" alt="">
+            </div>
+    </div>
+    <hr>
+    <div class="men">
+        <h1>Меню</h1>
+        <div id="menu">
+        <ul style="list-style-type: none; text-align: center; margin: 0px; padding: 0px;">
+            <li><a href="#r">Рамен</a></li>
+            <hr>
+            <li><a href="#u">Удон</a></li>
+            <hr>
+            <li><a href="#t">Такоякі</a></li>
+            <hr>
+            <li><a href="#y">Якіторі</a></li>
+            <hr>
+            <li><a href="#o">Онігірі</a></li>
+            <hr>
+            <li><a href="#s">Соба</a></li>
+            <hr>
+            <li><a href="#card">Суп Місо</a></li>
+            <hr>
+            <li><a href="#card">Кацудон</a></li>
+        </ul>
+        </div>
+    </div>
+    <footer id="contact">
+        <div>
+            <h3>Контакти</h3>
+            <p>Адреса: 1 Травня, 122 А, Чернігів</p>
+            <p>Телефон: +380123456789</p>
+        </div>
+        <div class="soc">
+            <img src="/img/ins.png">
+            <img src="/img/tel.png">
+        </div>
+        <div>
+            <h3>Графік роботи</h3>
+            <p>Пн-Пт: 9:00 - 20:00</p>
+            <p>Сб-Нд: 9:00 - 18:00</p>
+        </div>
+    </footer>
 </body>
 
 </html>
